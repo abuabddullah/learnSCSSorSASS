@@ -1,0 +1,28 @@
+header{
+    background-color: #c7c7c7;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    a{
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #000;
+        padding: 5px;
+        &:hover{
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+        &:first-child{
+            text-transform: uppercase;
+            background: #000;
+            color: #fff;
+            transition: all 0.5s;
+        }
+        &:first-child:hover{
+            text-transform: lowercase;
+            background: #fff;
+            color: #000;
+        }
+    }
+}

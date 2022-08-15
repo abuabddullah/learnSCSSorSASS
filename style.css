@@ -1,0 +1,103 @@
+header, footer {
+  background-color: #c7c7c7;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+header a, footer a {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+}
+header a:hover, footer a:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+header a:first-child, footer a:first-child {
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  transition: all 0.5s;
+}
+header a:first-child:hover, footer a:first-child:hover {
+  text-transform: lowercase;
+  background: #fff;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scssTopics {
+  margin: 20px 55px;
+}
+
+.wrapperDiv {
+  background-color: rgb(255, 245, 253);
+  padding: 5vmax;
+  margin: 2vmax;
+}
+.wrapperDiv h4 {
+  font-size: 5vmax;
+}
+.wrapperDiv ol li a {
+  color: rgb(0, 0, 0);
+  background-color: rgb(145, 255, 249);
+  border: 1px solid rgb(255, 251, 0);
+  padding: 1vmax;
+}
+.wrapperDiv ol li a:hover {
+  background-color: rgb(7, 189, 164);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 251, 0);
+}
+
+.cmnBtn, .inhrtBtn {
+  background-color: rgb(225, 128, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 251, 0);
+  padding: 1vmax;
+}
+.cmnBtn:hover, .inhrtBtn:hover {
+  background-color: rgb(145, 255, 249);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 251, 0);
+}
+
+.noParmasMixin {
+  background: r;
+  color: #000;
+  padding: 10px;
+  margin: 30px;
+  border: 1px solid #000;
+}
+.noParmasMixin:hover {
+  background: rgb(255, 255, 255);
+  color: r;
+  border: 1px solid r;
+}
+
+.withParamsMixin {
+  background: #000;
+  color: yellow;
+  padding: 10px;
+  margin: 30px;
+  border: 1px solid yellow;
+}
+.withParamsMixin:hover {
+  background: yellow;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.inhrtBtn {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: #ffafaf;
+}/*# sourceMappingURL=style.css.map */

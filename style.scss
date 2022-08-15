@@ -1,0 +1,73 @@
+@import "variables";
+@import "header";
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.scssTopics {
+    margin: 20px 55px;
+}
+
+.wrapperDiv {
+    background-color: $bgColor;
+    padding: 5vmax;
+    margin: 2vmax;
+
+    h4 {
+        font-size: $fontSize;
+    }
+
+    ol {
+        li {
+            a {
+                color: $buttonColor;
+                background-color: $buttonBgColor;
+                border: 1px solid $buttonBorderColor;
+                padding: $buttonPadding;
+
+                &:hover {
+                    background-color: $buttonHoverBgColor;
+                    color: $buttonHoverColor;
+                    border: 1px solid $buttonHoverBorderColor;
+                }
+            }
+        }
+    }
+}
+
+.cmnBtn {
+    background-color: rgb(225, 128, 255);
+    color: $buttonColor;
+    border: 1px solid $buttonBorderColor;
+    padding: $buttonPadding;
+
+    &:hover {
+        background-color: $buttonBgColor;
+        color: $buttonColor;
+        border: 1px solid $buttonBorderColor;
+    }
+}
+
+
+.noParmasMixin {
+    @include noParmasMixin;
+}
+
+
+.withParamsMixin {
+    @include withParamsMixin(yellow, #000);
+}
+
+
+.inhrtBtn {
+    @extend .cmnBtn;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    @extend header;
+    background-color: #ffafaf;
+}
