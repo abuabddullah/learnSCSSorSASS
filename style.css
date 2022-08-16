@@ -32,6 +32,24 @@ header a:first-child:hover, footer a:first-child:hover {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+article {
+  margin: 5vmax auto;
+  display: flex;
+  justify-content: space-between;
+}
+article figure {
+  width: 45%;
+  height: auto;
+}
+article figure img {
+  width: 100%;
+  height: auto;
+}
+
 .scssTopics {
   margin: 20px 55px;
 }
